@@ -1,0 +1,111 @@
+﻿@model Info
+<form asp-controller="User" asp-action="SelectInfoFields" method="post">
+	<table class="table table-bordered">
+		<tr>
+			<td width="90%">
+				<div class="mb-3">
+					<label asp-for="Name" class="form-label">Name</label>
+					<input asp-for="Name" class="form-control" />
+				</div>
+			</td>
+			<td width="10%">
+				<div class="form-group">
+					<label><input type="checkbox" checked name="NameVisibility" value="true" /> Görünsün</label>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td width="90%">
+				<div class="mb-3">
+					<label asp-for="RelatedName1" class="form-label">RelatedName</label>
+					<input asp-for="RelatedName1" class="form-control" />
+				</div>
+			</td>
+			<td width="10%">
+				<div class="form-group">
+					<label><input type="checkbox" checked name="RelatedName1Visibility" value="true" /> Görünsün</label>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td width="90%">
+				<div class="mb-3">
+					<label asp-for="RelatedName2" class="form-label">2.RelatedName</label>
+					<input asp-for="RelatedName2" class="form-control" />
+				</div>
+			</td>
+			<td width="10%">
+				<div class="form-group">
+					<label><input type="checkbox" checked name="RelatedName2Visibility" value="true" /> Görünsün</label>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td width="90%">
+				<div class="mb-3">
+					<label asp-for="RelatedPhone1" class="form-label">RelatedPhone</label>
+					<input asp-for="RelatedPhone1" class="form-control" />
+				</div>
+			</td>
+			<td width="10%">
+				<div class="form-group">
+					<label><input type="checkbox" checked name="RelatedPhone1Visibility" value="true" /> Görünsün</label>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td width="90%">
+				<div class="mb-3">
+					<label asp-for="RelatedPhone2" class="form-label">2.RelatedPhone</label>
+					<input asp-for="RelatedPhone2" class="form-control" />
+				</div>
+			</td>
+			<td width="10%">
+				<div class="form-group">
+					<label><input type="checkbox" checked name="RelatedPhone2Visibility" value="true" /> Görünsün</label>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td width="90%">
+				<div class="mb-3">
+					<label asp-for="Address" class="form-label">Address</label>
+					<input asp-for="Address" class="form-control" />
+				</div>
+			</td>
+			<td width="10%">
+				<div class="form-group">
+					<label><input type="checkbox" checked name="AddressVisibility" value="true" /> Görünsün</label>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td width="90%">
+				<div class="mb-3">
+					<label asp-for="Message" class="form-label">Message</label>
+					<input asp-for="Message" class="form-control" />
+				</div>
+			</td>
+			<td width="10%">
+				<div class="form-group">
+					<label><input type="checkbox" checked name="MessageVisibility" value="true" /> Görünsün</label>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td width="90%">
+				<div class="mb-3">
+					<label asp-for="Email" class="form-label">Email</label>
+					<input asp-for="Email" class="form-control" />
+				</div>
+			</td>
+			<td width="10%">
+				<div class="form-group">
+					<label><input type="checkbox" checked name="EmailVisibility" value="true" /> Görünsün</label>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<button type="submit" class="btn btn-secondary">Create</button>
+</form>
+

@@ -1,0 +1,67 @@
+﻿@model Info
+@{
+    ViewBag.Title = "Display Info Fields";
+}
+<table class="table table-bordered">
+    <tbody>
+        @if (Model.NameVisibility == true)
+        {
+            <tr>
+                <th>Name</th>
+                <td>@Model.Name</td>
+            </tr>
+        }
+        @if (Model.RelatedName1Visibility == true)
+        {
+            <tr>
+                <th>RelatedName1</th>
+                <td>@Model.RelatedName1</td>
+            </tr>
+        }
+        @if (Model.RelatedName2Visibility == true)
+        {
+            <tr>
+                <th>RelatedName2</th>
+                <td>@Model.RelatedName2</td>
+            </tr>
+        }
+        @if (Model.RelatedPhone1Visibility == true)
+        {
+            <tr>
+                <th>RelatedPhone1</th>
+                <td>@Model.RelatedPhone1</td>
+            </tr>
+        }
+        @if (Model.RelatedPhone2Visibility == true)
+        {
+            <tr>
+                <th>RelatedPhone2</th>
+                <td>@Model.RelatedPhone2</td>
+            </tr>
+        }
+        @if (Model.AddressVisibility == true)
+        {
+            <tr>
+                <th>Address</th>
+                <td>@Model.Address</td>
+            </tr>
+        }
+        @if (Model.MessageVisibility == true)
+        {
+            <tr>
+                <th>Message</th>
+                <td>@Model.Message</td>
+            </tr>
+        }
+        @if (Model.EmailVisibility == true)
+        {
+            <tr>
+                <th>Email</th>
+                <td>@Model.Email</td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+<a asp-controller="User" asp-action="EditInfoFields" asp-route-id="@Model.InfoId" class="btn btn-sm btn-primary">Edit</a>
+
